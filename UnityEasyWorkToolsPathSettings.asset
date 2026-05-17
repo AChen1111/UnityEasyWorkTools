@@ -17,12 +17,7 @@ MonoBehaviour:
   uiAutoBindGlobalSettingPath: Assets/UnityEasyWorkTools/UIAutoBind/AutoBindGlobalSetting.asset
   tableImporterRootFolder: Assets/UnityEasyWorkTools/TableImporter
   tableImporterUiFolder: Assets/UnityEasyWorkTools/TableImporter/Editor/UI
-  generatedImporterFolder: Assets/UnityEasyWorkTools/TableImporter/Importers/Generated
+  generatedImporterFolder: Assets/Scripts/Editor/Generated/Excel2SOImporters
   generatedRuntimeScriptFolder: Assets/Scripts/Generated/Excel2SO
   generatedDefaultAssetFolder: Assets/GameDataSO/Generated
   generatedCsvFolder: Assets/csv
-  itemDatabaseAssetPath: Assets/Resources/ItemDatabase.asset
-  weaponDatabaseAssetPath: Assets/Resources/WeaponDatabase.asset
-  buffDatabaseAssetPath: Assets/GameDataSO/DataBase/BuffDataBase.asset
-  enemyDatabaseAssetPath: Assets/GameDataSO/DataBase/EnemyDatabase.asset
-  itemSpawnTableAssetPath: Assets/GameDataSO/ItemSpawnerTable/ImportedItemSpawnTable.asset

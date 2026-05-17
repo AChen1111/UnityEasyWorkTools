@@ -23,9 +23,5 @@
             <ui:VisualElement name="table-importer-container" />
         </ui:VisualElement>
 
-        <ui:VisualElement class="uewt-section">
-            <ui:Label text="Project Table Assets / 项目表资产" class="uewt-section-title" />
-            <ui:VisualElement name="project-table-assets-container" />
-        </ui:VisualElement>
     </ui:VisualElement>
 </ui:UXML>

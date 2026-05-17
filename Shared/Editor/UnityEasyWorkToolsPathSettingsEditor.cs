@@ -24,11 +24,6 @@ namespace UnityEasyWorkTools.Editor
         private SerializedProperty generatedRuntimeScriptFolder;
         private SerializedProperty generatedDefaultAssetFolder;
         private SerializedProperty generatedCsvFolder;
-        private SerializedProperty itemDatabaseAssetPath;
-        private SerializedProperty weaponDatabaseAssetPath;
-        private SerializedProperty buffDatabaseAssetPath;
-        private SerializedProperty enemyDatabaseAssetPath;
-        private SerializedProperty itemSpawnTableAssetPath;
 
         private void OnEnable()
         {
@@ -41,11 +36,6 @@ namespace UnityEasyWorkTools.Editor
             generatedRuntimeScriptFolder = serializedObject.FindProperty("generatedRuntimeScriptFolder");
             generatedDefaultAssetFolder = serializedObject.FindProperty("generatedDefaultAssetFolder");
             generatedCsvFolder = serializedObject.FindProperty("generatedCsvFolder");
-            itemDatabaseAssetPath = serializedObject.FindProperty("itemDatabaseAssetPath");
-            weaponDatabaseAssetPath = serializedObject.FindProperty("weaponDatabaseAssetPath");
-            buffDatabaseAssetPath = serializedObject.FindProperty("buffDatabaseAssetPath");
-            enemyDatabaseAssetPath = serializedObject.FindProperty("enemyDatabaseAssetPath");
-            itemSpawnTableAssetPath = serializedObject.FindProperty("itemSpawnTableAssetPath");
         }
 
         public override VisualElement CreateInspectorGUI()
@@ -63,13 +53,6 @@ namespace UnityEasyWorkTools.Editor
             AddFolderRow(tableContainer, generatedRuntimeScriptFolder, "Generated Runtime Scripts");
             AddFolderRow(tableContainer, generatedDefaultAssetFolder, "Generated SO Assets");
             AddFolderRow(tableContainer, generatedCsvFolder, "Generated CSV Folder");
-
-            var projectAssetsContainer = root.Q<VisualElement>("project-table-assets-container");
-            AddAssetRow(projectAssetsContainer, itemDatabaseAssetPath, "Item Database");
-            AddAssetRow(projectAssetsContainer, weaponDatabaseAssetPath, "Weapon Database");
-            AddAssetRow(projectAssetsContainer, buffDatabaseAssetPath, "Buff Database");
-            AddAssetRow(projectAssetsContainer, enemyDatabaseAssetPath, "Enemy Database");
-            AddAssetRow(projectAssetsContainer, itemSpawnTableAssetPath, "Item Spawn Table");
 
             return root;
         }

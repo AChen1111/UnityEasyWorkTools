@@ -1,11 +1,16 @@
 .uewt-root {
-    padding: 8px;
+    padding-left: 8px;
+    padding-top: 8px;
+    padding-right: 18px;
+    padding-bottom: 8px;
+    min-width: 0;
 }
 
 .uewt-title {
     font-size: 15px;
     -unity-font-style: bold;
     margin-bottom: 6px;
+    white-space: normal;
 }
 
 .uewt-section {
@@ -15,6 +20,7 @@
     padding: 7px;
     margin-bottom: 7px;
     background-color: #242424;
+    min-width: 0;
 }
 
 .uewt-section-title {
@@ -26,6 +32,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     margin-bottom: 7px;
+    min-width: 0;
 }
 
 .uewt-toolbar-button {
@@ -36,16 +43,34 @@
 
 .uewt-row {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: 4px;
+    min-width: 0;
+}
+
+.uewt-root .unity-base-field {
+    min-width: 0;
+}
+
+.uewt-root .unity-base-field__input {
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.uewt-root .unity-object-field__selector {
+    flex-shrink: 0;
 }
 
 .uewt-grow {
     flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
 }
 
 .uewt-small-button {
     min-width: 70px;
+    flex-shrink: 0;
     margin-left: 4px;
 }
 
@@ -55,29 +80,38 @@
 
 .uewt-scroll {
     min-height: 160px;
+    min-width: 0;
 }
 
 .uewt-bind-row {
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: center;
     margin-bottom: 4px;
+    min-width: 0;
 }
 
 .uewt-index-label {
     width: 32px;
+    flex-shrink: 0;
 }
 
 .uewt-name-field {
     width: 170px;
+    min-width: 96px;
+    flex-shrink: 1;
     margin-right: 4px;
 }
 
 .uewt-component-field {
     flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 180px;
 }
 
 .uewt-danger-button {
     width: 32px;
+    flex-shrink: 0;
     margin-left: 4px;
 }
 

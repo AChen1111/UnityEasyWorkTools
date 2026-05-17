@@ -1,16 +1,23 @@
 {
-  "name": "com.pgun.unityeasyworktools.tableimporter",
+  "name": "com.achen1111.unityeasyworktools.tableimporter",
   "version": "0.1.0",
   "displayName": "UnityEasyWorkTools TableImporter",
-  "description": "UnityEasyWorkTools editor module for importing Excel and CSV tables into ScriptableObject assets.",
+  "description": "Unity editor module for importing Excel and CSV tables into ScriptableObject assets.",
   "unity": "2022.3",
   "keywords": [
     "excel",
     "csv",
     "scriptableobject",
+    "unity",
     "editor"
   ],
+  "documentationUrl": "https://github.com/AChen1111/UnityEasyWorkTools/blob/main/TableImporter/README.md",
+  "changelogUrl": "https://github.com/AChen1111/UnityEasyWorkTools/releases",
   "author": {
-    "name": "P_GUN"
+    "name": "AChen1111"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AChen1111/UnityEasyWorkTools.git"
   }
 }

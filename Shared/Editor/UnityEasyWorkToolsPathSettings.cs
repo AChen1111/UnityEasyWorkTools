@@ -24,17 +24,10 @@ namespace UnityEasyWorkTools.Editor
         [Header("Table Importer / 导表工具")]
         [SerializeField] private string tableImporterRootFolder = "Assets/UnityEasyWorkTools/TableImporter";
         [SerializeField] private string tableImporterUiFolder = "Assets/UnityEasyWorkTools/TableImporter/Editor/UI";
-        [SerializeField] private string generatedImporterFolder = "Assets/UnityEasyWorkTools/TableImporter/Importers/Generated";
+        [SerializeField] private string generatedImporterFolder = "Assets/Scripts/Editor/Generated/Excel2SOImporters";
         [SerializeField] private string generatedRuntimeScriptFolder = "Assets/Scripts/Generated/Excel2SO";
         [SerializeField] private string generatedDefaultAssetFolder = "Assets/GameDataSO/Generated";
         [SerializeField] private string generatedCsvFolder = "Assets/csv";
-
-        [Header("Project Table Assets / 项目表资产")]
-        [SerializeField] private string itemDatabaseAssetPath = "Assets/Resources/ItemDatabase.asset";
-        [SerializeField] private string weaponDatabaseAssetPath = "Assets/Resources/WeaponDatabase.asset";
-        [SerializeField] private string buffDatabaseAssetPath = "Assets/GameDataSO/DataBase/BuffDataBase.asset";
-        [SerializeField] private string enemyDatabaseAssetPath = "Assets/GameDataSO/DataBase/EnemyDatabase.asset";
-        [SerializeField] private string itemSpawnTableAssetPath = "Assets/GameDataSO/ItemSpawnerTable/ImportedItemSpawnTable.asset";
 
         public string ToolsRootFolder => NormalizeRequiredFolder(toolsRootFolder, nameof(toolsRootFolder));
         public string AnimationSequenceAssetFolder => NormalizeRequiredFolder(animationSequenceAssetFolder, nameof(animationSequenceAssetFolder));
@@ -45,11 +38,6 @@ namespace UnityEasyWorkTools.Editor
         public string GeneratedRuntimeScriptFolder => NormalizeRequiredFolder(generatedRuntimeScriptFolder, nameof(generatedRuntimeScriptFolder));
         public string GeneratedDefaultAssetFolder => NormalizeRequiredFolder(generatedDefaultAssetFolder, nameof(generatedDefaultAssetFolder));
         public string GeneratedCsvFolder => NormalizeRequiredFolder(generatedCsvFolder, nameof(generatedCsvFolder));
-        public string ItemDatabaseAssetPath => NormalizeRequiredAssetPath(itemDatabaseAssetPath, nameof(itemDatabaseAssetPath));
-        public string WeaponDatabaseAssetPath => NormalizeRequiredAssetPath(weaponDatabaseAssetPath, nameof(weaponDatabaseAssetPath));
-        public string BuffDatabaseAssetPath => NormalizeRequiredAssetPath(buffDatabaseAssetPath, nameof(buffDatabaseAssetPath));
-        public string EnemyDatabaseAssetPath => NormalizeRequiredAssetPath(enemyDatabaseAssetPath, nameof(enemyDatabaseAssetPath));
-        public string ItemSpawnTableAssetPath => NormalizeRequiredAssetPath(itemSpawnTableAssetPath, nameof(itemSpawnTableAssetPath));
 
         /// <summary>
         /// 读取路径配置, 不存在时创建默认配置资产, 方便插件首次导入后直接编辑.

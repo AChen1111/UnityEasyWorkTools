@@ -2,14 +2,22 @@
 
 UnityEasyWorkTools 是面向 Unity 项目的编辑器效率工具集合, 当前包含动画序列编辑、UI 自动绑定和表格导入三个模块。工具统一放在 `Tools/UnityEasyWorkTools` 菜单下, 并通过路径配置资产管理默认目录。
 
+项目地址: [AChen1111/UnityEasyWorkTools](https://github.com/AChen1111/UnityEasyWorkTools)
+
 ## 目录
 
+- [项目链接](#项目链接)
 - [功能模块](#功能模块)
 - [安装](#安装)
 - [使用](#使用)
 - [环境要求](#环境要求)
 - [目录结构](#目录结构)
 - [发布前检查](#发布前检查)
+
+## 项目链接
+
+- [GitHub 仓库](https://github.com/AChen1111/UnityEasyWorkTools)
+- [Issues](https://github.com/AChen1111/UnityEasyWorkTools/issues)
 
 ## 功能模块
 
@@ -49,14 +57,12 @@ Excel/CSV 到 ScriptableObject 的导表工具。
 - 支持 `.xlsx` 和 `.csv` 表格读取。
 - 支持字段映射、导入、导出和代码生成。
 - 通用核心位于 `TableImporter/Editor/Core`。
-- 项目导入器示例位于 `TableImporter/Importers`。
+- 具体项目导入器由使用者在自己的项目目录中创建, 插件仓库不内置业务示例。
 
 菜单入口:
 
 ```text
 Tools/UnityEasyWorkTools/Table Importer/Importer Window
-Tools/UnityEasyWorkTools/Addressables/Create Labels CSV Template
-Tools/UnityEasyWorkTools/Addressables/Import Labels From Excel
 ```
 
 文档:
@@ -85,7 +91,7 @@ Assets/UnityEasyWorkTools
 也可以通过 Git submodule 安装:
 
 ```powershell
-git submodule add <repository-url> Assets/UnityEasyWorkTools
+git submodule add https://github.com/AChen1111/UnityEasyWorkTools.git Assets/UnityEasyWorkTools
 ```
 
 导入后先打开路径配置:
@@ -105,7 +111,6 @@ Tools/UnityEasyWorkTools/Settings/Open Path Settings
 
 - Unity 2022.3 或更高版本。
 - DOTween, 用于 `AnimationSequence` 运行时动画。
-- Unity Addressables, 仅 `TableImporter/Importers/AddressablesLabelTableImporter` 需要。
 
 ## 目录结构
 
@@ -122,12 +127,11 @@ UnityEasyWorkTools/
   TableImporter/
     Editor/Core/  表格读取、字段映射、导入、导出、代码生成核心.
     Editor/UI/    导表窗口 UXML、USS 和窗口脚本.
-    Importers/    项目导入器示例.
     Docs/         导表工具说明.
 ```
 
 ## 发布前检查
 
 - 不要在 `Assets/UnityEasyWorkTools` 内创建嵌套 `.git` 仓库。
-- 如果发布为通用插件, 请移除或单独放置 `TableImporter/Importers` 中依赖 `Game.Core`、`Game.Items`、`Game.Gameplay`、`Game.Animation` 的项目导入器示例。
-- 如果作为 UPM Git package 发布, 请补齐根目录 `package.json`, 并确认默认路径是否仍以 `Assets/UnityEasyWorkTools` 为根。
+- 不要把具体项目的表导入器、业务程序集引用或 Addressables 项目脚本提交到干净插件仓库。
+- 当前默认路径以 `Assets/UnityEasyWorkTools` 为根, 改为 UPM Git package 前需要同步调整路径配置。

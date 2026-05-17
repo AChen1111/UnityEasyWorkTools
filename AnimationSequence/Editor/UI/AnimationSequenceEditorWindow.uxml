@@ -1,0 +1,37 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="animation-sequence-root" class="uewt-root">
+        <ui:Label text="Animation Sequence Editor" class="uewt-title" />
+
+        <ui:VisualElement class="uewt-section">
+            <ui:Label text="动画资产" class="uewt-section-title" />
+            <uie:ObjectField name="current-asset-field" label="当前资产" />
+            <ui:VisualElement class="uewt-row">
+                <ui:TextField name="new-asset-name-field" label="新资产名" class="uewt-grow" />
+                <ui:Button name="create-asset-button" text="创建" class="uewt-button" />
+            </ui:VisualElement>
+            <ui:VisualElement class="uewt-row uewt-row-right">
+                <ui:Button name="save-asset-button" text="保存资产" class="uewt-button" />
+                <ui:Button name="ping-asset-button" text="定位资产" class="uewt-button" />
+            </ui:VisualElement>
+            <ui:Label name="empty-asset-help" text="请选择或创建一个 AnimationSequenceAsset." class="uewt-help" />
+        </ui:VisualElement>
+
+        <ui:VisualElement name="editor-content" class="uewt-content">
+            <ui:VisualElement class="uewt-section">
+                <ui:Label text="批量添加" class="uewt-section-title" />
+                <uie:ObjectField name="target-path-root-field" label="路径根节点" />
+                <ui:VisualElement name="effect-type-container" />
+                <ui:VisualElement class="uewt-row">
+                    <ui:Button name="add-empty-step-button" text="添加空步骤" class="uewt-button" />
+                    <ui:Button name="add-selection-button" text="从当前 Selection 批量添加" class="uewt-button-wide" />
+                </ui:VisualElement>
+                <ui:Label text="场景对象引用不会稳定保存到项目资产中, 窗口会同步写入层级路径供 AnimationPlayer 运行时解析." class="uewt-help" />
+            </ui:VisualElement>
+
+            <ui:VisualElement class="uewt-section uewt-steps-section">
+                <ui:Label name="steps-count-label" text="动画步骤: 0" class="uewt-section-title" />
+                <ui:ScrollView name="steps-scroll" class="uewt-scroll" />
+            </ui:VisualElement>
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

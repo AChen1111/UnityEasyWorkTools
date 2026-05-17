@@ -1,0 +1,39 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="excel2so-root" class="excel2so-window">
+        <ui:Label name="title-label" text="Excel2SO Importer / 表格工具" class="window-title" />
+
+        <ui:VisualElement name="form-root" class="form-root">
+            <ui:VisualElement class="main-layout">
+                <ui:VisualElement name="mode-sidebar" class="mode-sidebar" />
+
+                <ui:VisualElement name="content-panel" class="content-panel">
+                    <ui:VisualElement name="importer-row" class="form-row">
+                        <ui:Label text="Importer / 导入器" class="field-label" />
+                        <ui:VisualElement name="importer-container" class="field-slot" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="table-path-row" class="form-row">
+                        <ui:Label name="table-path-label" text="Table / 表格" class="field-label" />
+                        <ui:TextField name="table-path-field" class="path-field" />
+                        <ui:Button name="table-browse-button" text="Browse / 浏览" class="path-button" />
+                    </ui:VisualElement>
+
+                    <ui:VisualElement name="target-path-row" class="form-row">
+                        <ui:Label name="target-path-label" text="Target / 目标" class="field-label" />
+                        <ui:TextField name="target-path-field" class="path-field" />
+                        <ui:Button name="target-browse-button" text="Save As / 另存" class="path-button target-button" />
+                        <ui:Button name="target-default-button" text="Default / 默认" class="path-button target-button" />
+                    </ui:VisualElement>
+
+                    <ui:ScrollView name="codegen-root" class="codegen-root" />
+
+                    <ui:VisualElement class="action-row">
+                        <ui:Button name="import-button" text="Import / 导入" class="import-button" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+        </ui:VisualElement>
+
+        <ui:Label name="status-label" class="status-label" />
+    </ui:VisualElement>
+</ui:UXML>

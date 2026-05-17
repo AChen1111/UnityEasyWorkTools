@@ -1,0 +1,8 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="auto-bind-setting-root" class="uewt-root">
+        <ui:Label text="Auto Bind Global Setting" class="uewt-title" />
+        <ui:VisualElement class="uewt-section">
+            <ui:VisualElement name="setting-fields-container" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

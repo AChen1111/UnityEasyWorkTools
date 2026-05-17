@@ -1,0 +1,245 @@
+.excel2so-window {
+    flex-grow: 1;
+    min-width: 0;
+    padding-left: 12px;
+    padding-right: 12px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+.window-title {
+    font-size: 18px;
+    -unity-font-style: bold;
+    margin-bottom: 12px;
+}
+
+.form-root {
+    flex-grow: 1;
+    flex-shrink: 0;
+    min-width: 0;
+}
+
+.main-layout {
+    flex-direction: row;
+    flex-grow: 1;
+    min-width: 0;
+}
+
+.mode-sidebar {
+    width: 170px;
+    min-width: 170px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-right: 14px;
+    padding-right: 10px;
+    border-right-width: 1px;
+    border-right-color: rgba(0, 0, 0, 0.18);
+}
+
+.mode-sidebar-button {
+    height: 34px;
+    min-height: 34px;
+    margin-bottom: 8px;
+    -unity-text-align: middle-left;
+}
+
+.mode-sidebar-button-selected {
+    -unity-font-style: bold;
+}
+
+.content-panel {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.form-row {
+    flex-direction: row;
+    align-items: center;
+    min-height: 28px;
+    min-width: 0;
+    margin-bottom: 8px;
+}
+
+.field-label {
+    width: 132px;
+    min-width: 132px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    -unity-text-align: middle-left;
+}
+
+.field-slot {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.importer-popup {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+}
+
+.importer-popup .unity-base-field__label {
+    display: none;
+    width: 0;
+    min-width: 0;
+}
+
+.path-field {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    margin-right: 8px;
+}
+
+.path-button {
+    width: 116px;
+    min-width: 116px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.target-button {
+    margin-left: 6px;
+}
+
+.action-row {
+    flex-direction: row;
+    justify-content: flex-end;
+    min-width: 0;
+    margin-top: 8px;
+}
+
+.import-button {
+    width: 126px;
+    min-width: 126px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.codegen-root {
+    max-height: 360px;
+    min-height: 0;
+    margin-top: 2px;
+    margin-bottom: 4px;
+}
+
+.codegen-section-title {
+    -unity-font-style: bold;
+    margin-top: 6px;
+    margin-bottom: 6px;
+}
+
+.codegen-row {
+    flex-direction: row;
+    align-items: center;
+    min-height: 28px;
+    min-width: 0;
+    margin-bottom: 6px;
+}
+
+.codegen-label {
+    width: 190px;
+    min-width: 190px;
+    flex-grow: 0;
+    flex-shrink: 0;
+    -unity-text-align: middle-left;
+}
+
+.codegen-text-field {
+    flex-grow: 1;
+    flex-shrink: 1;
+    min-width: 0;
+    margin-right: 8px;
+}
+
+.codegen-path-button {
+    width: 126px;
+    min-width: 126px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.codegen-fields {
+    min-width: 0;
+}
+
+.codegen-field-header,
+.codegen-field-row {
+    flex-direction: row;
+    align-items: center;
+    min-height: 28px;
+    min-width: 0;
+    margin-bottom: 4px;
+}
+
+.codegen-field-header Label {
+    -unity-font-style: bold;
+}
+
+.codegen-column-header,
+.codegen-column-field {
+    width: 130px;
+    min-width: 90px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 6px;
+}
+
+.codegen-property-header,
+.codegen-property-field {
+    width: 130px;
+    min-width: 90px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 6px;
+}
+
+.codegen-type-header,
+.codegen-type-field {
+    width: 230px;
+    min-width: 180px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 6px;
+}
+
+.codegen-enum-header,
+.codegen-enum-field {
+    width: 160px;
+    min-width: 120px;
+    flex-grow: 1;
+    flex-shrink: 1;
+    margin-right: 6px;
+}
+
+.codegen-remove-header,
+.codegen-remove-button {
+    width: 26px;
+    min-width: 26px;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+
+.codegen-type-field .unity-base-field__label,
+.codegen-column-field .unity-base-field__label,
+.codegen-property-field .unity-base-field__label,
+.codegen-enum-field .unity-base-field__label,
+.codegen-text-field .unity-base-field__label {
+    display: none;
+    width: 0;
+    min-width: 0;
+}
+
+.codegen-add-button {
+    width: 150px;
+    min-width: 150px;
+    margin-top: 4px;
+}
+
+.status-label {
+    white-space: normal;
+    margin-top: 14px;
+}

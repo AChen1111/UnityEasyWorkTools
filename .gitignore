@@ -1,0 +1,19 @@
+# Unity project generated folders, kept here for standalone plugin repository usage.
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+
+# IDE and OS files.
+.vs/
+.idea/
+*.csproj
+*.sln
+*.user
+*.tmp
+.DS_Store
+Thumbs.db
+

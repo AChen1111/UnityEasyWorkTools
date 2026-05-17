@@ -1,0 +1,31 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="path-settings-root" class="uewt-root">
+        <ui:Label text="UnityEasyWorkTools Path Settings" class="uewt-title" />
+        <ui:Label text="所有路径都使用 Unity AssetDatabase 路径, 例如 Assets/xxx. 点击“选择”会打开系统文件管理器, 点击“打开”会在文件管理器中定位当前路径." class="uewt-help" />
+
+        <ui:VisualElement class="uewt-section">
+            <ui:Label text="Plugin Root / 插件根目录" class="uewt-section-title" />
+            <ui:VisualElement name="plugin-root-container" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="uewt-section">
+            <ui:Label text="Animation Sequence / 动画序列" class="uewt-section-title" />
+            <ui:VisualElement name="animation-container" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="uewt-section">
+            <ui:Label text="UI Auto Bind / UI 自动绑定" class="uewt-section-title" />
+            <ui:VisualElement name="ui-auto-bind-container" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="uewt-section">
+            <ui:Label text="Table Importer / 导表工具" class="uewt-section-title" />
+            <ui:VisualElement name="table-importer-container" />
+        </ui:VisualElement>
+
+        <ui:VisualElement class="uewt-section">
+            <ui:Label text="Project Table Assets / 项目表资产" class="uewt-section-title" />
+            <ui:VisualElement name="project-table-assets-container" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

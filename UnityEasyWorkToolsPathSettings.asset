@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0935e32e1cac40559fd27640f5ab0c73, type: 3}
+  m_Name: UnityEasyWorkToolsPathSettings
+  m_EditorClassIdentifier: 
+  toolsRootFolder: Assets/UnityEasyWorkTools
+  animationSequenceAssetFolder: Assets/GameDataSO/DOTweenAnimationSequence
+  uiAutoBindGlobalSettingPath: Assets/UnityEasyWorkTools/UIAutoBind/AutoBindGlobalSetting.asset
+  tableImporterRootFolder: Assets/UnityEasyWorkTools/TableImporter
+  tableImporterUiFolder: Assets/UnityEasyWorkTools/TableImporter/Editor/UI
+  generatedImporterFolder: Assets/UnityEasyWorkTools/TableImporter/Importers/Generated
+  generatedRuntimeScriptFolder: Assets/Scripts/Generated/Excel2SO
+  generatedDefaultAssetFolder: Assets/GameDataSO/Generated
+  generatedCsvFolder: Assets/csv
+  itemDatabaseAssetPath: Assets/Resources/ItemDatabase.asset
+  weaponDatabaseAssetPath: Assets/Resources/WeaponDatabase.asset
+  buffDatabaseAssetPath: Assets/GameDataSO/DataBase/BuffDataBase.asset
+  enemyDatabaseAssetPath: Assets/GameDataSO/DataBase/EnemyDatabase.asset
+  itemSpawnTableAssetPath: Assets/GameDataSO/ItemSpawnerTable/ImportedItemSpawnTable.asset

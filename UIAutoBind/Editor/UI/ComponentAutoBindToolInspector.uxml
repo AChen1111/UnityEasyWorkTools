@@ -1,0 +1,14 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" editor-extension-mode="True">
+    <ui:VisualElement name="component-auto-bind-root" class="uewt-root">
+        <ui:Label text="Component Auto Bind Tool" class="uewt-title" />
+
+        <ui:VisualElement name="toolbar-container" class="uewt-toolbar" />
+        <ui:VisualElement name="helper-container" class="uewt-section" />
+        <ui:VisualElement name="settings-container" class="uewt-section" />
+
+        <ui:VisualElement class="uewt-section uewt-bind-section">
+            <ui:Label name="bind-list-title" text="绑定数据" class="uewt-section-title" />
+            <ui:ScrollView name="bind-list-scroll" class="uewt-scroll" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+</ui:UXML>

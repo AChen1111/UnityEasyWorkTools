@@ -1,0 +1,91 @@
+.uewt-root {
+    padding: 10px;
+    min-width: 520px;
+}
+
+.uewt-title {
+    font-size: 16px;
+    -unity-font-style: bold;
+    margin-bottom: 8px;
+}
+
+.uewt-section {
+    border-width: 1px;
+    border-color: #3f3f3f;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 8px;
+    background-color: #242424;
+}
+
+.uewt-section-title {
+    -unity-font-style: bold;
+    margin-bottom: 6px;
+}
+
+.uewt-row {
+    flex-direction: row;
+    align-items: center;
+    margin-top: 4px;
+}
+
+.uewt-row-right {
+    justify-content: flex-end;
+}
+
+.uewt-grow {
+    flex-grow: 1;
+}
+
+.uewt-button {
+    min-width: 72px;
+    margin-left: 4px;
+}
+
+.uewt-button-wide {
+    min-width: 170px;
+    margin-left: 4px;
+}
+
+.uewt-help {
+    white-space: normal;
+    color: #bcbcbc;
+    margin-top: 6px;
+}
+
+.uewt-content {
+    flex-grow: 1;
+}
+
+.uewt-steps-section {
+    flex-grow: 1;
+}
+
+.uewt-scroll {
+    flex-grow: 1;
+    min-height: 260px;
+}
+
+.uewt-step-card {
+    border-width: 1px;
+    border-color: #555555;
+    border-radius: 4px;
+    padding: 8px;
+    margin-bottom: 6px;
+    background-color: #2d2d2d;
+}
+
+.uewt-step-header {
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.uewt-step-title {
+    -unity-font-style: bold;
+    flex-grow: 1;
+}
+
+.uewt-param-container {
+    margin-top: 4px;
+}
